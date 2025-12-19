@@ -2,11 +2,11 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Catalog
+namespace Ordering
 {
-    public static class CatalogModule
+    public static class OrderingModule
     {
-        public static IServiceCollection AddCatalogModule(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddOrderingModule(this IServiceCollection services, IConfiguration configuration)
         {
             //Add services to the container.
             //services
@@ -16,8 +16,7 @@ namespace Catalog
 
             return services;
         }
-
-        public static IApplicationBuilder UseCatalogModule(this IApplicationBuilder app)
+        public static IApplicationBuilder UseOrderingModule(this IApplicationBuilder app)
         {
             //Configues the HTTP request pipeline
             //app

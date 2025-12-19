@@ -2,22 +2,20 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Catalog
+namespace Basket
 {
-    public static class CatalogModule
+    public static class BasketModule
     {
-        public static IServiceCollection AddCatalogModule(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddBasketModule(this IServiceCollection services, IConfiguration configuration)
         {
             //Add services to the container.
             //services
             //    .AddApplicationServices()
             //    .AddInfrastructureServices(configuration)
             //    .AddApiServices(configuration);
-
             return services;
         }
-
-        public static IApplicationBuilder UseCatalogModule(this IApplicationBuilder app)
+        public static IApplicationBuilder UseBasketModule(this IApplicationBuilder app)
         {
             //Configues the HTTP request pipeline
             //app
@@ -27,4 +25,5 @@ namespace Catalog
             return app;
         }
     }
+
 }
